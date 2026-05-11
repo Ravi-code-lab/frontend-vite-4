@@ -1,65 +1,96 @@
-// Brand constants for Jain Associates
 export const BRAND = {
-  name: "Jain Associates",
-  tagline: "Building Generational Wealth with Integrity & Expertise",
-  since: "1987",
-  oneliner: "Mutual Funds & Insurance Distributor",
-  logoUrl: "https://customer-assets.emergentagent.com/job_trust-advisory-2/artifacts/y30yr9z8_image.png",
-  loginUrl: "https://navinkumar.themfbox.com/",
-  primaryEmail: "Jainasambhav@gmail.com",
-  primaryPhone: "+91 9314502344",
-  addresses: [
-    { label: "Primary Office", line: "80, Janakpuri 1st, Imli Phatak, Jaipur 302015" },
-    { label: "Secondary Office", line: "747, Mishra Raja Ji Ka Rasta, Indira Bazar, Jaipur" },
-  ],
-  mapsLink: "https://maps.app.goo.gl/ZTBCBjMFyX9hLaKJ8",
-  // Used for embedded iframe of primary address
-  mapsEmbed: "https://www.google.com/maps?q=Janakpuri+1st+Imli+Phatak+Jaipur+302015&output=embed",
-};
+  name: 'WealthAdvisors',
+  since: 2005,
+  tagline: 'Grow your wealth with Integrity & Expertise.',
+  location: 'Jaipur, Rajasthan',
+  aum: '100+ Cr',
+  families: '1,400+',
+  amcs: 45,
+  insurers: 15,
+}
 
-export const STATS = [
-  { value: "100+ Cr", label: "Mutual Fund AUM" },
-  { value: "1400+", label: "Active Investors" },
-  { value: "Top 50", label: "MF Distributors of Rajasthan" },
-  { value: "45+", label: "Mutual Funds & 15+ Insurers" },
-];
-
-export const SERVICES = [
-  { icon: "TrendingUp", title: "Mutual Funds", desc: "Curated SIPs, ELSS and equity portfolios across 45+ AMCs to compound your wealth steadily." },
-  { icon: "ShieldCheck", title: "Insurance", desc: "Life, term, health & motor insurance from 15+ insurers — chosen to protect what matters most." },
-  { icon: "Landmark", title: "Govt. & Corporate Bonds", desc: "Fixed-income solutions for stability, predictable returns and capital preservation." },
-  { icon: "BadgeIndianRupee", title: "Loan Against Securities", desc: "Unlock liquidity from your portfolio without disturbing your long-term investments." },
-];
-
-export const FOUNDERS = [
-  {
-    id: "navin",
-    name: "Navin Kumar Jain",
-    role: "",
-    summary: "40+ years in mutual fund distribution, government & corporate bonds, and insurance — including warehousing & industrial.",
-    phone: "+91 9829853021",
-    email: "Jainanaveen@gmail.com",
-    image: "https://customer-assets.emergentagent.com/job_trust-advisory-2/artifacts/zinjwlpw_ChatGPT%20Image%20May%208%2C%202026%2C%2010_23_51%20AM.png",
-  },
-  {
-    id: "rakesh",
-    name: "Rakesh Jain",
-    role: "",
-    summary: "Top distributor for Health & Motor Insurance and Loan Against Securities — focused on protection-first planning.",
-    phone: "+91 9314502347",
-    email: "jainrakesh2368@gmail.com",
-    image: "https://customer-assets.emergentagent.com/job_trust-advisory-2/artifacts/bg4tj53e_ChatGPT%20Image%20May%208%2C%202026%2C%2010_26_46%20AM.png",
-  },
-  {
-    id: "sambhav",
-    name: "Sambhav Jain",
-    role: "",
-    summary: "Worked with one of the biggest real estate private equity funds in their valuation team. Holds a CFA certification and brings equity-research experience that gives our investors a measurable edge.",
-    phone: "+91 9314502344",
-    email: "Jainasambhav@gmail.com",
-    image: "https://customer-assets.emergentagent.com/job_trust-advisory-2/artifacts/7mruqwrv_image.png",
-  },
-];
-
-export const HERO_IMAGE = "https://images.pexels.com/photos/4067525/pexels-photo-4067525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400";
-export const ABSTRACT_IMAGE = "https://images.unsplash.com/photo-1689732888407-310424e3a372?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGNoYXJ0cyUyMGdyb3d0aCUyMGJsdWV8ZW58MHx8fHwxNzc4MjA5MTMwfDA&ixlib=rb-4.1.0&q=85";
+// A beautiful SVG-based hero background (no external image needed)
+export const HERO_IMAGE = 'data:image/svg+xml,' + encodeURIComponent(`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2540"/>
+      <stop offset="50%" style="stop-color:#0c3060"/>
+      <stop offset="100%" style="stop-color:#0A2540"/>
+    </linearGradient>
+    <linearGradient id="building1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a7a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d2f50;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="building2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2260a0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f3560;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0056b3;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1f3c"/>
+      <stop offset="100%" style="stop-color:#1a3a6e"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <!-- Stars -->
+  <circle cx="100" cy="80" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="250" cy="40" r="1" fill="white" opacity="0.5"/>
+  <circle cx="400" cy="60" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="600" cy="30" r="1" fill="white" opacity="0.7"/>
+  <circle cx="800" cy="50" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="950" cy="35" r="1" fill="white" opacity="0.6"/>
+  <circle cx="1100" cy="70" r="1.5" fill="white" opacity="0.4"/>
+  <!-- Background buildings -->
+  <rect x="0" y="300" width="120" height="400" fill="#0c2a4a" opacity="0.7"/>
+  <rect x="80" y="250" width="100" height="450" fill="#0e2f52" opacity="0.7"/>
+  <rect x="1050" y="280" width="150" height="420" fill="#0c2a4a" opacity="0.7"/>
+  <!-- Main tall building center -->
+  <rect x="450" y="80" width="200" height="620" fill="url(#building2)"/>
+  <!-- Glass panels on main building -->
+  <rect x="460" y="90" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="510" y="90" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="560" y="90" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="610" y="90" width="30" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="460" y="165" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="510" y="165" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="560" y="165" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="610" y="165" width="30" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="460" y="240" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="510" y="240" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <rect x="560" y="240" width="40" height="60" fill="url(#glass)" rx="1"/>
+  <!-- Lit windows -->
+  <rect x="470" y="100" width="20" height="40" fill="#FFD700" opacity="0.4" rx="1"/>
+  <rect x="520" y="175" width="20" height="40" fill="#FFD700" opacity="0.3" rx="1"/>
+  <rect x="570" y="100" width="20" height="40" fill="#FFD700" opacity="0.35" rx="1"/>
+  <!-- Left building -->
+  <rect x="200" y="180" width="180" height="520" fill="url(#building1)"/>
+  <rect x="210" y="195" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="255" y="195" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="300" y="195" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="210" y="260" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="255" y="260" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="300" y="260" width="35" height="50" fill="url(#glass)" rx="1"/>
+  <rect x="215" y="200" width="15" height="35" fill="#FFD700" opacity="0.3" rx="1"/>
+  <rect x="305" y="265" width="15" height="35" fill="#FFD700" opacity="0.35" rx="1"/>
+  <!-- Right building -->
+  <rect x="720" y="150" width="220" height="550" fill="url(#building1)"/>
+  <rect x="730" y="165" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="780" y="165" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="830" y="165" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="880" y="165" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="730" y="235" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="780" y="235" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="830" y="235" width="40" height="55" fill="url(#glass)" rx="1"/>
+  <rect x="735" y="170" width="20" height="40" fill="#FFD700" opacity="0.3" rx="1"/>
+  <rect x="835" y="240" width="20" height="40" fill="#FFD700" opacity="0.4" rx="1"/>
+  <!-- Ground -->
+  <rect x="0" y="650" width="1200" height="50" fill="#071828"/>
+  <!-- Glow effect -->
+  <ellipse cx="600" cy="650" rx="400" ry="60" fill="#0056b3" opacity="0.15"/>
+</svg>
+`)
